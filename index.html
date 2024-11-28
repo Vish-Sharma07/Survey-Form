@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please fill out the form below.</p>
+  </header>
+
+  <main>
+    <form id="survey-form">
+      <!-- Name Field -->
+      <label id="name-label" for="name">Name:</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        placeholder="Enter your full name" 
+        required>
+      
+      <!-- Email Field -->
+      <label id="email-label" for="email">Email:</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required>
+      
+      <!-- Number Field -->
+      <label id="number-label" for="number">Age:</label>
+      <input 
+        type="number" 
+        id="number" 
+        name="age" 
+        placeholder="Enter your age" 
+        min="10" 
+        max="100" 
+        required>
+
+      <!-- Dropdown -->
+      <label for="dropdown">What is your favorite programming language?</label>
+      <select id="dropdown" name="language">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="other">Other</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>How satisfied are you with our service?</p>
+      <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied">
+      <label for="very-satisfied">Very Satisfied</label><br>
+      <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+      <label for="satisfied">Satisfied</label><br>
+      <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+      <label for="dissatisfied">Dissatisfied</label>
+
+      <!-- Checkboxes -->
+      <p>What features do you like? (Select all that apply)</p>
+      <input type="checkbox" id="feature-1" name="features" value="design">
+      <label for="feature-1">Design</label><br>
+      <input type="checkbox" id="feature-2" name="features" value="usability">
+      <label for="feature-2">Usability</label><br>
+      <input type="checkbox" id="feature-3" name="features" value="performance">
+      <label for="feature-3">Performance</label>
+
+      <!-- Textarea -->
+      <label for="comments">Any additional comments:</label>
+      <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+
+      <!-- Submit Button -->
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </main>
+</body>
+</html>
