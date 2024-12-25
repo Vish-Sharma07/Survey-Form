@@ -62,3 +62,33 @@ body {
     resize: vertical;
   }
   
+  form input:focus,
+form select:focus,
+form textarea:focus,
+form button:focus {
+  outline: 2px solid #007BFF;
+  outline-offset: 2px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center; /* Aligns the button and text */
+    gap: 10px; /* Adds spacing between the radio button and the text */
+    margin-bottom: 8px; /* Adds spacing between each option */
+  }
+  
+  .radio-group input[type="radio"] {
+    margin: 0; /* Removes default margin for radio buttons */
+  }
+
+  .checkbox-group label {
+    display: flex;
+    align-items: center; /* Aligns the checkbox and text */
+    gap: 10px; /* Adds spacing between the checkbox and the text */
+    margin-bottom: 8px; /* Adds spacing between each option */
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin: 0; /* Removes default margin for checkboxes */
+  }
+  
